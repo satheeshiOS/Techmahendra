@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05AA9B03BF10B8C5E71662C9 /* Pods_TechMahendra_TechMahendraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533FE06AD91C51F6A604B2B2 /* Pods_TechMahendra_TechMahendraUITests.framework */; };
+		43C1987C062A319481DD9240 /* Pods_TechMahendra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CAFC729758193DAB872A12 /* Pods_TechMahendra.framework */; };
+		7336FC392535D9DD005A090A /* CountryDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7336FC382535D9DD005A090A /* CountryDetailsTableViewCell.swift */; };
+		7374C777253585C6008CB501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C776253585C6008CB501 /* AppDelegate.swift */; };
+		7374C779253585C6008CB501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C778253585C6008CB501 /* SceneDelegate.swift */; };
+		7374C77B253585C6008CB501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C77A253585C6008CB501 /* ViewController.swift */; };
+		7374C77E253585C6008CB501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7374C77C253585C6008CB501 /* Main.storyboard */; };
+		7374C780253585C7008CB501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7374C77F253585C7008CB501 /* Assets.xcassets */; };
+		7374C783253585C7008CB501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7374C781253585C7008CB501 /* LaunchScreen.storyboard */; };
+		7374C78E253585C7008CB501 /* TechMahendraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C78D253585C7008CB501 /* TechMahendraTests.swift */; };
+		7374C799253585C7008CB501 /* TechMahendraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C798253585C7008CB501 /* TechMahendraUITests.swift */; };
+		7374C7A7253588B4008CB501 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C7A6253588B4008CB501 /* Model.swift */; };
+		7374C7AD253589E7008CB501 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C7AC253589E7008CB501 /* CountryViewModel.swift */; };
+		7374C7AF25358B9D008CB501 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C7AE25358B9D008CB501 /* ApiService.swift */; };
+		7374C7B225358BCD008CB501 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C7B125358BCD008CB501 /* Constant.swift */; };
+		7E748659D31EC8B7523FA6E1 /* Pods_TechMahendraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845758EF5969909D8FCDC44 /* Pods_TechMahendraTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7374C78A253585C7008CB501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7374C76B253585C6008CB501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7374C772253585C6008CB501;
+			remoteInfo = TechMahendra;
+		};
+		7374C795253585C7008CB501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7374C76B253585C6008CB501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7374C772253585C6008CB501;
+			remoteInfo = TechMahendra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0845758EF5969909D8FCDC44 /* Pods_TechMahendraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechMahendraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		533FE06AD91C51F6A604B2B2 /* Pods_TechMahendra_TechMahendraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechMahendra_TechMahendraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7336FC382535D9DD005A090A /* CountryDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		7374C773253585C6008CB501 /* TechMahendra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMahendra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7374C776253585C6008CB501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7374C778253585C6008CB501 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7374C77A253585C6008CB501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7374C77D253585C6008CB501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7374C77F253585C7008CB501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7374C782253585C7008CB501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7374C784253585C7008CB501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7374C789253585C7008CB501 /* TechMahendraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechMahendraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7374C78D253585C7008CB501 /* TechMahendraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechMahendraTests.swift; sourceTree = "<group>"; };
+		7374C78F253585C7008CB501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7374C794253585C7008CB501 /* TechMahendraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechMahendraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7374C798253585C7008CB501 /* TechMahendraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechMahendraUITests.swift; sourceTree = "<group>"; };
+		7374C79A253585C7008CB501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7374C7A6253588B4008CB501 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7374C7AC253589E7008CB501 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		7374C7AE25358B9D008CB501 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		7374C7B125358BCD008CB501 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		84DD6EF00C29506A1343AFBD /* Pods-TechMahendra-TechMahendraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendra-TechMahendraUITests.release.xcconfig"; path = "Target Support Files/Pods-TechMahendra-TechMahendraUITests/Pods-TechMahendra-TechMahendraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A3CAFC729758193DAB872A12 /* Pods_TechMahendra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechMahendra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD74AB93789A1E3355909EC6 /* Pods-TechMahendra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendra.debug.xcconfig"; path = "Target Support Files/Pods-TechMahendra/Pods-TechMahendra.debug.xcconfig"; sourceTree = "<group>"; };
+		E20576B199C21F5D65090D0E /* Pods-TechMahendraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendraTests.debug.xcconfig"; path = "Target Support Files/Pods-TechMahendraTests/Pods-TechMahendraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB8525DC7F956941200618D0 /* Pods-TechMahendra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendra.release.xcconfig"; path = "Target Support Files/Pods-TechMahendra/Pods-TechMahendra.release.xcconfig"; sourceTree = "<group>"; };
+		F3F62DE6F17DF6E9C3AA271E /* Pods-TechMahendra-TechMahendraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendra-TechMahendraUITests.debug.xcconfig"; path = "Target Support Files/Pods-TechMahendra-TechMahendraUITests/Pods-TechMahendra-TechMahendraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F57C5F4D2900EF0433807503 /* Pods-TechMahendraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendraTests.release.xcconfig"; path = "Target Support Files/Pods-TechMahendraTests/Pods-TechMahendraTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7374C770253585C6008CB501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C1987C062A319481DD9240 /* Pods_TechMahendra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7374C786253585C7008CB501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E748659D31EC8B7523FA6E1 /* Pods_TechMahendraTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7374C791253585C7008CB501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05AA9B03BF10B8C5E71662C9 /* Pods_TechMahendra_TechMahendraUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DA3AD7D1F78770B70FCB477 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3CAFC729758193DAB872A12 /* Pods_TechMahendra.framework */,
+				533FE06AD91C51F6A604B2B2 /* Pods_TechMahendra_TechMahendraUITests.framework */,
+				0845758EF5969909D8FCDC44 /* Pods_TechMahendraTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7374C76A253585C6008CB501 = {
+			isa = PBXGroup;
+			children = (
+				7374C775253585C6008CB501 /* TechMahendra */,
+				7374C78C253585C7008CB501 /* TechMahendraTests */,
+				7374C797253585C7008CB501 /* TechMahendraUITests */,
+				7374C774253585C6008CB501 /* Products */,
+				D729C682B193FBA69DBBC54C /* Pods */,
+				1DA3AD7D1F78770B70FCB477 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7374C774253585C6008CB501 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7374C773253585C6008CB501 /* TechMahendra.app */,
+				7374C789253585C7008CB501 /* TechMahendraTests.xctest */,
+				7374C794253585C7008CB501 /* TechMahendraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7374C775253585C6008CB501 /* TechMahendra */ = {
+			isa = PBXGroup;
+			children = (
+				7374C7A825358984008CB501 /* MVVM */,
+				7374C776253585C6008CB501 /* AppDelegate.swift */,
+				7374C778253585C6008CB501 /* SceneDelegate.swift */,
+				7374C77C253585C6008CB501 /* Main.storyboard */,
+				7374C77F253585C7008CB501 /* Assets.xcassets */,
+				7374C781253585C7008CB501 /* LaunchScreen.storyboard */,
+				7374C784253585C7008CB501 /* Info.plist */,
+			);
+			path = TechMahendra;
+			sourceTree = "<group>";
+		};
+		7374C78C253585C7008CB501 /* TechMahendraTests */ = {
+			isa = PBXGroup;
+			children = (
+				7374C78D253585C7008CB501 /* TechMahendraTests.swift */,
+				7374C78F253585C7008CB501 /* Info.plist */,
+			);
+			path = TechMahendraTests;
+			sourceTree = "<group>";
+		};
+		7374C797253585C7008CB501 /* TechMahendraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7374C798253585C7008CB501 /* TechMahendraUITests.swift */,
+				7374C79A253585C7008CB501 /* Info.plist */,
+			);
+			path = TechMahendraUITests;
+			sourceTree = "<group>";
+		};
+		7374C7A825358984008CB501 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				7374C7B025358BA4008CB501 /* ApiService */,
+				7374C7AB2535899E008CB501 /* View Model */,
+				7374C7AA25358995008CB501 /* Model */,
+				7374C7A92535898D008CB501 /* View */,
+				7374C7B125358BCD008CB501 /* Constant.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		7374C7A92535898D008CB501 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7374C77A253585C6008CB501 /* ViewController.swift */,
+				7336FC382535D9DD005A090A /* CountryDetailsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7374C7AA25358995008CB501 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7374C7A6253588B4008CB501 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7374C7AB2535899E008CB501 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				7374C7AC253589E7008CB501 /* CountryViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		7374C7B025358BA4008CB501 /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				7374C7AE25358B9D008CB501 /* ApiService.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		D729C682B193FBA69DBBC54C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD74AB93789A1E3355909EC6 /* Pods-TechMahendra.debug.xcconfig */,
+				EB8525DC7F956941200618D0 /* Pods-TechMahendra.release.xcconfig */,
+				F3F62DE6F17DF6E9C3AA271E /* Pods-TechMahendra-TechMahendraUITests.debug.xcconfig */,
+				84DD6EF00C29506A1343AFBD /* Pods-TechMahendra-TechMahendraUITests.release.xcconfig */,
+				E20576B199C21F5D65090D0E /* Pods-TechMahendraTests.debug.xcconfig */,
+				F57C5F4D2900EF0433807503 /* Pods-TechMahendraTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7374C772253585C6008CB501 /* TechMahendra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7374C79D253585C7008CB501 /* Build configuration list for PBXNativeTarget "TechMahendra" */;
+			buildPhases = (
+				6D2BF55AED0CFDBA2F1D52C9 /* [CP] Check Pods Manifest.lock */,
+				7374C76F253585C6008CB501 /* Sources */,
+				7374C770253585C6008CB501 /* Frameworks */,
+				7374C771253585C6008CB501 /* Resources */,
+				489A86E081DE04DDBF615F1A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TechMahendra;
+			productName = TechMahendra;
+			productReference = 7374C773253585C6008CB501 /* TechMahendra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7374C788253585C7008CB501 /* TechMahendraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7374C7A0253585C7008CB501 /* Build configuration list for PBXNativeTarget "TechMahendraTests" */;
+			buildPhases = (
+				8BCFCFC52D56FD6039818543 /* [CP] Check Pods Manifest.lock */,
+				7374C785253585C7008CB501 /* Sources */,
+				7374C786253585C7008CB501 /* Frameworks */,
+				7374C787253585C7008CB501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7374C78B253585C7008CB501 /* PBXTargetDependency */,
+			);
+			name = TechMahendraTests;
+			productName = TechMahendraTests;
+			productReference = 7374C789253585C7008CB501 /* TechMahendraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7374C793253585C7008CB501 /* TechMahendraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7374C7A3253585C7008CB501 /* Build configuration list for PBXNativeTarget "TechMahendraUITests" */;
+			buildPhases = (
+				CE2D816C9B6664C2D53A6BF0 /* [CP] Check Pods Manifest.lock */,
+				7374C790253585C7008CB501 /* Sources */,
+				7374C791253585C7008CB501 /* Frameworks */,
+				7374C792253585C7008CB501 /* Resources */,
+				5078A69D23979AE613936500 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7374C796253585C7008CB501 /* PBXTargetDependency */,
+			);
+			name = TechMahendraUITests;
+			productName = TechMahendraUITests;
+			productReference = 7374C794253585C7008CB501 /* TechMahendraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7374C76B253585C6008CB501 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7374C772253585C6008CB501 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					7374C788253585C7008CB501 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 7374C772253585C6008CB501;
+					};
+					7374C793253585C7008CB501 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 7374C772253585C6008CB501;
+					};
+				};
+			};
+			buildConfigurationList = 7374C76E253585C6008CB501 /* Build configuration list for PBXProject "TechMahendra" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7374C76A253585C6008CB501;
+			productRefGroup = 7374C774253585C6008CB501 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7374C772253585C6008CB501 /* TechMahendra */,
+				7374C788253585C7008CB501 /* TechMahendraTests */,
+				7374C793253585C7008CB501 /* TechMahendraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7374C771253585C6008CB501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7374C783253585C7008CB501 /* LaunchScreen.storyboard in Resources */,
+				7374C780253585C7008CB501 /* Assets.xcassets in Resources */,
+				7374C77E253585C6008CB501 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7374C787253585C7008CB501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7374C792253585C7008CB501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		489A86E081DE04DDBF615F1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechMahendra/Pods-TechMahendra-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechMahendra/Pods-TechMahendra-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechMahendra/Pods-TechMahendra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5078A69D23979AE613936500 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechMahendra-TechMahendraUITests/Pods-TechMahendra-TechMahendraUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechMahendra-TechMahendraUITests/Pods-TechMahendra-TechMahendraUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechMahendra-TechMahendraUITests/Pods-TechMahendra-TechMahendraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D2BF55AED0CFDBA2F1D52C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechMahendra-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BCFCFC52D56FD6039818543 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechMahendraTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE2D816C9B6664C2D53A6BF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechMahendra-TechMahendraUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7374C76F253585C6008CB501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7374C7B225358BCD008CB501 /* Constant.swift in Sources */,
+				7374C77B253585C6008CB501 /* ViewController.swift in Sources */,
+				7374C7A7253588B4008CB501 /* Model.swift in Sources */,
+				7374C7AF25358B9D008CB501 /* ApiService.swift in Sources */,
+				7374C777253585C6008CB501 /* AppDelegate.swift in Sources */,
+				7336FC392535D9DD005A090A /* CountryDetailsTableViewCell.swift in Sources */,
+				7374C779253585C6008CB501 /* SceneDelegate.swift in Sources */,
+				7374C7AD253589E7008CB501 /* CountryViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7374C785253585C7008CB501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7374C78E253585C7008CB501 /* TechMahendraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7374C790253585C7008CB501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7374C799253585C7008CB501 /* TechMahendraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7374C78B253585C7008CB501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7374C772253585C6008CB501 /* TechMahendra */;
+			targetProxy = 7374C78A253585C7008CB501 /* PBXContainerItemProxy */;
+		};
+		7374C796253585C7008CB501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7374C772253585C6008CB501 /* TechMahendra */;
+			targetProxy = 7374C795253585C7008CB501 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7374C77C253585C6008CB501 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7374C77D253585C6008CB501 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7374C781253585C7008CB501 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7374C782253585C7008CB501 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7374C79B253585C7008CB501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7374C79C253585C7008CB501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7374C79E253585C7008CB501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD74AB93789A1E3355909EC6 /* Pods-TechMahendra.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FGQY27M8;
+				INFOPLIST_FILE = TechMahendra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ventures.TechMahendra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7374C79F253585C7008CB501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8525DC7F956941200618D0 /* Pods-TechMahendra.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FGQY27M8;
+				INFOPLIST_FILE = TechMahendra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ventures.TechMahendra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7374C7A1253585C7008CB501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20576B199C21F5D65090D0E /* Pods-TechMahendraTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FGQY27M8;
+				INFOPLIST_FILE = TechMahendraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ventures.TechMahendraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechMahendra.app/TechMahendra";
+			};
+			name = Debug;
+		};
+		7374C7A2253585C7008CB501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57C5F4D2900EF0433807503 /* Pods-TechMahendraTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FGQY27M8;
+				INFOPLIST_FILE = TechMahendraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ventures.TechMahendraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechMahendra.app/TechMahendra";
+			};
+			name = Release;
+		};
+		7374C7A4253585C7008CB501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F62DE6F17DF6E9C3AA271E /* Pods-TechMahendra-TechMahendraUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FGQY27M8;
+				INFOPLIST_FILE = TechMahendraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ventures.TechMahendraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TechMahendra;
+			};
+			name = Debug;
+		};
+		7374C7A5253585C7008CB501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DD6EF00C29506A1343AFBD /* Pods-TechMahendra-TechMahendraUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FGQY27M8;
+				INFOPLIST_FILE = TechMahendraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ventures.TechMahendraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TechMahendra;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7374C76E253585C6008CB501 /* Build configuration list for PBXProject "TechMahendra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7374C79B253585C7008CB501 /* Debug */,
+				7374C79C253585C7008CB501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7374C79D253585C7008CB501 /* Build configuration list for PBXNativeTarget "TechMahendra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7374C79E253585C7008CB501 /* Debug */,
+				7374C79F253585C7008CB501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7374C7A0253585C7008CB501 /* Build configuration list for PBXNativeTarget "TechMahendraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7374C7A1253585C7008CB501 /* Debug */,
+				7374C7A2253585C7008CB501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7374C7A3253585C7008CB501 /* Build configuration list for PBXNativeTarget "TechMahendraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7374C7A4253585C7008CB501 /* Debug */,
+				7374C7A5253585C7008CB501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7374C76B253585C6008CB501 /* Project object */;
+}
