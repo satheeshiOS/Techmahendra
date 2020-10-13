@@ -87,6 +87,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CountryDetailsTableViewCell
         cell.backgroundColor = .white
+
         if let data = self.countryModel?.rows?[indexPath.row] {
             cell.countryData = data
             return cell
@@ -95,6 +96,20 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         }
         
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard   let cell = cell as? CountryDetailsTableViewCell else{
+            return
+        }
+        if let data = self.countryModel?.rows?[indexPath.row] {
+            cell.countryData = data
+        }
+    }
+    
+        func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+            guard let cell = cell as? CountryDetailsTableViewCell else { return }
+            cell.countryDetailImage?.af.cancelImageRequest()
+        }
     
 }
 

@@ -27,13 +27,7 @@ class CountryDetailsTableViewCell: UITableViewCell {
         return label
     }()
     
-    lazy var countryDetailImage : UIImageView = {
-        let img = UIImageView()
-        img.translatesAutoresizingMaskIntoConstraints = false
-        img.layer.cornerRadius = 25
-        img.clipsToBounds = true
-        return img
-    }()
+    private(set) weak var countryDetailImage : UIImageView?
     
     
     //country data to load after api call
@@ -52,10 +46,10 @@ class CountryDetailsTableViewCell: UITableViewCell {
                 }
                 if let imageUrl = countryDetails.imageHref  {
                     if let detailImageUrl = URL(string: imageUrl) {
-                        self.countryDetailImage.af.setImage(withURL: detailImageUrl, placeholderImage: #imageLiteral(resourceName:"default-placeholder-image"))
+                        self.countryDetailImage?.af.setImage(withURL: detailImageUrl, placeholderImage: #imageLiteral(resourceName:"default-placeholder-image"))
                     }
                 } else {
-                    self.countryDetailImage.image = #imageLiteral(resourceName: "default-placeholder-image")
+                    self.countryDetailImage?.image = #imageLiteral(resourceName: "default-placeholder-image")
                 }
 
             }
@@ -67,7 +61,14 @@ class CountryDetailsTableViewCell: UITableViewCell {
         
         self.addSubview(self.titleLabel)
         self.addSubview(self.descriptionLabel)
-        self.addSubview(self.countryDetailImage)
+        
+        let img = UIImageView()
+        img.translatesAutoresizingMaskIntoConstraints = false
+        img.layer.cornerRadius = 25
+        img.clipsToBounds = true
+        self.addSubview(img)
+        countryDetailImage = img
+
         setUpUILayout()
      }
 
@@ -77,21 +78,25 @@ class CountryDetailsTableViewCell: UITableViewCell {
     
     //Layout Setup
     fileprivate func setUpUILayout() {
-        [self.countryDetailImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-         self.countryDetailImage.widthAnchor.constraint(equalToConstant: 50),
-         self.countryDetailImage.heightAnchor.constraint(equalToConstant: 50),
-         self.countryDetailImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 5)].forEach{$0!.isActive = true}
+        [self.countryDetailImage?.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+         self.countryDetailImage?.widthAnchor.constraint(equalToConstant: 50),
+         self.countryDetailImage?.heightAnchor.constraint(equalToConstant: 50),
+         self.countryDetailImage?.topAnchor.constraint(equalTo: self.topAnchor, constant: 5)].forEach{$0!.isActive = true}
         
-        [self.titleLabel.leadingAnchor.constraint(equalTo: self.countryDetailImage.trailingAnchor, constant: 10),
+        [self.titleLabel.leadingAnchor.constraint(equalTo: self.countryDetailImage!.trailingAnchor, constant: 10),
          self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0),
          self.titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 5)].forEach{$0!.isActive = true}
         
-        [self.descriptionLabel.leadingAnchor.constraint(equalTo: self.countryDetailImage.trailingAnchor, constant: 10),
+        [self.descriptionLabel.leadingAnchor.constraint(equalTo: self.countryDetailImage!.trailingAnchor, constant: 10),
          self.descriptionLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0),
          self.descriptionLabel.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 0),
          self.descriptionLabel.bottomAnchor.constraint(equalTo:self.bottomAnchor ,constant: -10),
          self.descriptionLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 20)].forEach{$0!.isActive = true}
     }
 
+    
+    override func prepareForReuse() {
+        countryDetailImage?.image = nil
+    }
 
 }
