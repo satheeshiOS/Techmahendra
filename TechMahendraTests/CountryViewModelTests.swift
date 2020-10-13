@@ -1,5 +1,5 @@
 //
-//  CountryDetailsTableViewCellTests.swift
+//  CountryViewModelTests.swift
 //  TechMahendraTests
 //
 //  Created by Satheesh Speed Mac on 13/10/20.
@@ -8,19 +8,17 @@
 import XCTest
 @testable import TechMahendra
 
-class CountryDetailsTableViewCellTests: XCTestCase {
+class CountryViewModelTests: XCTestCase {
 
-    var cell: CountryDetailsTableViewCell!
-
+    var viewModel: CountryViewModel!
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        cell = CountryDetailsTableViewCell()
-
+        viewModel = CountryViewModel()
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        cell = nil
     }
 
     func testExample() throws {
@@ -28,12 +26,8 @@ class CountryDetailsTableViewCellTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testSetUpUILayout() throws {
-        cell.setUpUILayout()
-    }
-    
-    func testPrepareForUse() throws {
-        cell.prepareForReuse()
+    func testApiToGetData() throws {
+        viewModel.apiToGetData()
     }
 
     func testPerformanceExample() throws {
