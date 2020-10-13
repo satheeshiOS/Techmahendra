@@ -24,6 +24,7 @@
 		7374C7B225358BCD008CB501 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7374C7B125358BCD008CB501 /* Constant.swift */; };
 		7E748659D31EC8B7523FA6E1 /* Pods_TechMahendraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0845758EF5969909D8FCDC44 /* Pods_TechMahendraTests.framework */; };
 		F028E35E25361B470053CB3C /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028E35D25361B470053CB3C /* ViewControllerTests.swift */; };
+		F028E36325361C9D0053CB3C /* CountryDetailsTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F028E36225361C9D0053CB3C /* CountryDetailsTableViewCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		E20576B199C21F5D65090D0E /* Pods-TechMahendraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendraTests.debug.xcconfig"; path = "Target Support Files/Pods-TechMahendraTests/Pods-TechMahendraTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB8525DC7F956941200618D0 /* Pods-TechMahendra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendra.release.xcconfig"; path = "Target Support Files/Pods-TechMahendra/Pods-TechMahendra.release.xcconfig"; sourceTree = "<group>"; };
 		F028E35D25361B470053CB3C /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		F028E36225361C9D0053CB3C /* CountryDetailsTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsTableViewCellTests.swift; sourceTree = "<group>"; };
 		F3F62DE6F17DF6E9C3AA271E /* Pods-TechMahendra-TechMahendraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendra-TechMahendraUITests.debug.xcconfig"; path = "Target Support Files/Pods-TechMahendra-TechMahendraUITests/Pods-TechMahendra-TechMahendraUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F57C5F4D2900EF0433807503 /* Pods-TechMahendraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMahendraTests.release.xcconfig"; path = "Target Support Files/Pods-TechMahendraTests/Pods-TechMahendraTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 				7374C78D253585C7008CB501 /* TechMahendraTests.swift */,
 				F028E35D25361B470053CB3C /* ViewControllerTests.swift */,
 				7374C78F253585C7008CB501 /* Info.plist */,
+				F028E36225361C9D0053CB3C /* CountryDetailsTableViewCellTests.swift */,
 			);
 			path = TechMahendraTests;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F028E36325361C9D0053CB3C /* CountryDetailsTableViewCellTests.swift in Sources */,
 				F028E35E25361B470053CB3C /* ViewControllerTests.swift in Sources */,
 				7374C78E253585C7008CB501 /* TechMahendraTests.swift in Sources */,
 			);

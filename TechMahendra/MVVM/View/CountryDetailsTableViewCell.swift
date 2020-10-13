@@ -77,7 +77,7 @@ class CountryDetailsTableViewCell: UITableViewCell {
     }
     
     //Layout Setup
-    fileprivate func setUpUILayout() {
+    func setUpUILayout() {
         [self.countryDetailImage?.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
          self.countryDetailImage?.widthAnchor.constraint(equalToConstant: 50),
          self.countryDetailImage?.heightAnchor.constraint(equalToConstant: 50),
