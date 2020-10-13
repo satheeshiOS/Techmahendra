@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         tableView.addSubview(refreshControl) // add refresh
     }
     
-    //Create constraints on layout
+    //Create constraints using  Autolayout
     func setUpUILayout() {
         
         self.view.backgroundColor = .white
@@ -79,10 +79,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         return self.countryModel?.rows?.count ?? 0
     }
     
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-    
+    //Handle dynamic cell height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return  UITableView.automaticDimension
     }
