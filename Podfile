@@ -8,7 +8,6 @@ target 'TechMahendra' do
   # Pods for TechMahendra
   
   pod 'Alamofire', '~> 5.2'
-  pod 'Texture'
   pod 'AlamofireImage', '~> 4.1'
 
   target 'TechMahendraTests' do

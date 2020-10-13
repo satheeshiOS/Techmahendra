@@ -2,64 +2,20 @@ PODS:
   - Alamofire (5.2.2)
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
-  - PINCache (3.0.1):
-    - PINCache/Arc-exception-safe (= 3.0.1)
-    - PINCache/Core (= 3.0.1)
-  - PINCache/Arc-exception-safe (3.0.1):
-    - PINCache/Core
-  - PINCache/Core (3.0.1):
-    - PINOperation (~> 1.2.0)
-  - PINOperation (1.2)
-  - PINRemoteImage/Core (3.0.1):
-    - PINOperation
-  - PINRemoteImage/iOS (3.0.1):
-    - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.1):
-    - PINCache (~> 3.0.1)
-    - PINRemoteImage/Core
-  - Texture (3.0.0):
-    - Texture/AssetsLibrary (= 3.0.0)
-    - Texture/Core (= 3.0.0)
-    - Texture/MapKit (= 3.0.0)
-    - Texture/Photos (= 3.0.0)
-    - Texture/PINRemoteImage (= 3.0.0)
-    - Texture/Video (= 3.0.0)
-  - Texture/AssetsLibrary (3.0.0):
-    - Texture/Core
-  - Texture/Core (3.0.0)
-  - Texture/MapKit (3.0.0):
-    - Texture/Core
-  - Texture/Photos (3.0.0):
-    - Texture/Core
-  - Texture/PINRemoteImage (3.0.0):
-    - PINRemoteImage/iOS (~> 3.0.0)
-    - PINRemoteImage/PINCache
-    - Texture/Core
-  - Texture/Video (3.0.0):
-    - Texture/Core
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - AlamofireImage (~> 4.1)
-  - Texture
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
-    - PINCache
-    - PINOperation
-    - PINRemoteImage
-    - Texture
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
-  PINCache: ee3c4abadd09970a61cdda0cfc345e69a3d75b26
-  PINOperation: 3a967a927e7867e61976c6cc23e5770416449fbc
-  PINRemoteImage: 3b7cedb118c2d357f87e9eabc7c81ba0202cb236
-  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
 
-PODFILE CHECKSUM: abca364f76321985abc5ddc5606244fb609a0021
+PODFILE CHECKSUM: 8fce121120c627f845b20007052d5ace2e2fa992
 
 COCOAPODS: 1.9.3

@@ -2,13 +2,17 @@
 //  ApiService.swift
 //  TechMahendra
 //
-//  Created by PPC-INDIA on 13/10/20.
+//  Created by Satheesh K on 13/10/20.
 //
 
 import Foundation
 
 class APIService :  NSObject {
-        
+    
+    static let shared = APIService()
+    
+    private override init() { }
+
     func apiToGetEmployeeData(completion : @escaping (CountryModel) -> ()){
         URLSession.shared.dataTask(with: sourcesURL) { (data, urlResponse, error) in
             if let data = data {

@@ -2,32 +2,38 @@
 //  ViewController.swift
 //  TechMahendra
 //
-//  Created by PPC-INDIA on 13/10/20.
+//  Created by Satheesh K on 13/10/20.
 //
 
 import UIKit
-import AsyncDisplayKit
 
 class ViewController: UIViewController {
-
+    
     private var countryViewModel : CountryViewModel!
     private var countryModel: CountryModel? = nil
-
-    let tableView: UITableView = {
+    private var refreshControl = UIRefreshControl()
+    
+    lazy var tableView: UITableView = {
         let tableview = UITableView()
         tableview.backgroundColor = UIColor.clear
         tableview.translatesAutoresizingMaskIntoConstraints = false
+        tableview.allowsSelection = false
+        tableview.tableFooterView = UIView(frame: .zero)
         return tableview
     }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpUILayout()
         callToViewModelForUIUpdate()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(callToViewModelForUIUpdate), for: .valueChanged)
+        tableView.addSubview(refreshControl) // add refresh
     }
-
+    
+    //Create constraints on layout
     func setUpUILayout() {
         
         self.view.backgroundColor = .white
@@ -37,7 +43,9 @@ class ViewController: UIViewController {
         self.tableView.estimatedRowHeight = 100
         self.view.addSubview(self.tableView)
         
+        //Register cell before using it in tableview
         tableView.register(CountryDetailsTableViewCell.self, forCellReuseIdentifier: "cell")
+        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -47,31 +55,35 @@ class ViewController: UIViewController {
     }
     
     
-    
-    func callToViewModelForUIUpdate(){
+    // MARK: - ViewModel -> View to update data
+    @objc func callToViewModelForUIUpdate(){
         self.countryViewModel =  CountryViewModel() //Initialize and fetch the data
         self.countryViewModel.bindCountryViewModelToController = {
             self.countryModel = self.countryViewModel.countryModel
             
             self.countryModel?.rows = self.countryViewModel.countryModel?.rows?.filter({ (details) -> Bool in
                 if details.title != nil && details.title != nil && details.title != nil {
-                 return true
+                    return true
                 } else {
                     return false
                 }
             })
-                    
+            
+            //Use Main Thread to update the data
             DispatchQueue.main.async {
                 self.navigationItem.title = self.countryModel?.title
                 self.tableView.reloadData()
+                self.refreshControl.endRefreshing()
             }
         }
     }
-        
+    
 }
 
+// MARK: - UITableViewDataSource
 extension ViewController : UITableViewDelegate, UITableViewDataSource{
     
+    // table view data source methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.countryModel?.rows?.count ?? 0
     }

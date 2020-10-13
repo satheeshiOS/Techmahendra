@@ -2,7 +2,7 @@
 //  TechMahendraUITests.swift
 //  TechMahendraUITests
 //
-//  Created by PPC-INDIA on 13/10/20.
+//  Created by Satheesh K on 13/10/20.
 //
 
 import XCTest
