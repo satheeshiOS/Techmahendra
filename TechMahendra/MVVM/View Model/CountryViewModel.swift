@@ -25,6 +25,7 @@ class CountryViewModel: NSObject {
         self.apiToGetData()
     }
 
+    //Fetch data from the server
     func apiToGetData () {
         APIService.shared.apiToGetEmployeeData { (countryDetails) in
             self.countryModel = countryDetails
