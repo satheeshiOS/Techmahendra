@@ -60,15 +60,6 @@ class ViewController: UIViewController {
         self.countryViewModel =  CountryViewModel() //Initialize and fetch the data
         self.countryViewModel.bindCountryViewModelToController = {
             self.countryModel = self.countryViewModel.countryModel
-            
-            self.countryModel?.rows = self.countryViewModel.countryModel?.rows?.filter({ (details) -> Bool in
-                if details.title != nil && details.title != nil && details.title != nil {
-                    return true
-                } else {
-                    return false
-                }
-            })
-            
             //Use Main Thread to update the data
             DispatchQueue.main.async {
                 self.navigationItem.title = self.countryModel?.title
